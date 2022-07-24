@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -369,10 +369,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 615661176, guid: 3a600568b344c44c681036619ae42853, type: 3}
-      propertyPath: waitDelay
-      value: 1.25
+    - target: {fileID: 615661175, guid: 3a600568b344c44c681036619ae42853, type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 615661176, guid: 3a600568b344c44c681036619ae42853, type: 3}
+      propertyPath: winAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 08612d57d1956429ca9604f532e36bee, type: 3}
+    - target: {fileID: 615661176, guid: 3a600568b344c44c681036619ae42853, type: 3}
+      propertyPath: crashAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 267895fe3300c4afb98e817ebab42978, type: 3}
+    - target: {fileID: 1935460454, guid: 3a600568b344c44c681036619ae42853, type: 3}
+      propertyPath: mainThrustAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: d90241508bab0460388dbb99b0f4dae6, type: 3}
     - target: {fileID: 2204191775858503833, guid: 3a600568b344c44c681036619ae42853, type: 3}
       propertyPath: m_RootOrder
       value: 5

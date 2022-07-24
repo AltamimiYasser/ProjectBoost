@@ -4,6 +4,7 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] float mainThrustVelocity = 1000f;
     [SerializeField] float rotateThrustVelocity = 100f;
+    [SerializeField] AudioClip mainThrustAudio;
 
     Rigidbody rb;
     AudioSource audioSource;
@@ -28,7 +29,7 @@ public class Movement : MonoBehaviour
 
             if (!audioSource.isPlaying)
             {
-                audioSource.Play();
+                audioSource.PlayOneShot(mainThrustAudio);
             }
         }
         else
