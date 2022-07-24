@@ -11,13 +11,18 @@ public class CollisionHandler : MonoBehaviour
     Movement controller;
     AudioSource audioSource;
 
+    bool isTransitioning = false;
+
     void Start()
     {
         controller = GetComponent<Movement>();
         audioSource = GetComponent<AudioSource>();
     }
+
     void OnCollisionEnter(Collision other)
     {
+        if (isTransitioning) return;
+
         switch (other.gameObject.tag)
         {
             case "Friendly":
@@ -29,24 +34,34 @@ public class CollisionHandler : MonoBehaviour
                 StartCrashSequence();
                 break;
         }
-
     }
 
     void StartWinSequence()
     {
-        playAudio(winAudio);
         // TODO: add Particle effects
-        controller.enabled = false;
+        playAudio(winAudio);
+        EnterTransitionState();
         Invoke(nameof(LoadNextLevelOrReset), levelLoadDelay);
     }
 
     void StartCrashSequence()
     {
-        // TODO: add SFX
-        playAudio(crashAudio);
         // TODO: add Particle effects
-        controller.enabled = false;
+        playAudio(crashAudio);
+        EnterTransitionState();
         Invoke(nameof(ReloadLevel), levelLoadDelay);
+    }
+
+    void playAudio(AudioClip clip)
+    {
+        audioSource.Stop(); // to stop the thrusting sound
+        audioSource.PlayOneShot(clip);
+    }
+
+    private void EnterTransitionState()
+    {
+        isTransitioning = true;
+        controller.enabled = false;
     }
 
     void LoadNextLevelOrReset()
@@ -63,11 +78,4 @@ public class CollisionHandler : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex);
     }
 
-    void playAudio(AudioClip clip)
-    {
-        if (!audioSource.isPlaying)
-        {
-            audioSource.PlayOneShot(clip);
-        }
-    }
 }

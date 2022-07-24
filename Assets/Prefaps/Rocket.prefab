@@ -227,6 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainThrustVelocity: 1000
   rotateThrustVelocity: 100
+  mainThrustAudio: {fileID: 8300000, guid: d90241508bab0460388dbb99b0f4dae6, type: 3}
 --- !u!114 &615661176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,3 +241,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoadDelay: 2
+  winAudio: {fileID: 8300000, guid: 08612d57d1956429ca9604f532e36bee, type: 3}
+  crashAudio: {fileID: 8300000, guid: 267895fe3300c4afb98e817ebab42978, type: 3}
