@@ -4,30 +4,50 @@ using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
-    [SerializeField] int maxLevel = 1;
+    [SerializeField] float levelLoadDelay = 2f;
+    Movement controller;
+
+    void Start()
+    {
+        controller = GetComponent<Movement>();
+    }
     void OnCollisionEnter(Collision other)
     {
         switch (other.gameObject.tag)
         {
             case "Friendly":
-                Debug.Log("We bumped into a friendly object");
                 break;
             case "Finish":
-                LoadNextLevelOrReset();
+                StartWinSequence();
                 break;
             default:
-                ReloadLevel();
+                StartCrashSequence();
                 break;
         }
 
     }
 
-    private void LoadNextLevelOrReset()
+    void StartWinSequence()
     {
-        int levelToLoad;
-        int nextLevelIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        // TODO: add SFX
+        // TODO: add Particle effects
+        controller.enabled = false;
+        Invoke(nameof(LoadNextLevelOrReset), levelLoadDelay);
+    }
 
-        levelToLoad = nextLevelIndex > maxLevel ? 0 : nextLevelIndex;
+    void StartCrashSequence()
+    {
+        // TODO: add SFX
+        // TODO: add Particle effects
+        controller.enabled = false;
+        Invoke(nameof(ReloadLevel), levelLoadDelay);
+    }
+
+    void LoadNextLevelOrReset()
+    {
+        int nextLevelIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        int levelToLoad = nextLevelIndex < SceneManager.sceneCountInBuildSettings ? nextLevelIndex : 0;
+
         SceneManager.LoadScene(levelToLoad);
     }
 
