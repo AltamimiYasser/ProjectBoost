@@ -5,6 +5,9 @@ public class Movement : MonoBehaviour
     [SerializeField] float mainThrustVelocity = 1000f;
     [SerializeField] float rotateThrustVelocity = 100f;
     [SerializeField] AudioClip mainThrustAudio;
+    [SerializeField] ParticleSystem mainThrustParticles;
+    [SerializeField] ParticleSystem rightSideThrustParticles;
+    [SerializeField] ParticleSystem leftSideThrustParticles;
 
     Rigidbody rb;
     AudioSource audioSource;
@@ -25,29 +28,52 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddRelativeForce(Vector3.up * mainThrustVelocity * Time.deltaTime);
+            StartThrusting();
 
-            if (!audioSource.isPlaying)
-            {
-                audioSource.PlayOneShot(mainThrustAudio);
-            }
         }
         else
         {
-            audioSource.Stop();
+            StopThrusting();
         }
     }
 
     void ProcessRotate()
     {
-        if (Input.GetKey(KeyCode.A))
-        {
-            ApplyRotation(Vector3.forward);
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            ApplyRotation(Vector3.back);
-        }
+        if (Input.GetKey(KeyCode.A)) RotateLeft();
+        else if (Input.GetKey(KeyCode.D)) RotateRight();
+        else StopSideParticles();
+    }
+
+    void StartThrusting()
+    {
+        rb.AddRelativeForce(Vector3.up * mainThrustVelocity * Time.deltaTime);
+
+        if (!audioSource.isPlaying) audioSource.PlayOneShot(mainThrustAudio);
+        if (!mainThrustParticles.isPlaying) mainThrustParticles.Play();
+    }
+
+    private void StopThrusting()
+    {
+        audioSource.Stop();
+        mainThrustParticles.Stop();
+    }
+
+    private void RotateLeft()
+    {
+        ApplyRotation(Vector3.forward);
+        if (!rightSideThrustParticles.isPlaying) rightSideThrustParticles.Play();
+    }
+
+    private void RotateRight()
+    {
+        ApplyRotation(Vector3.back);
+        if (!leftSideThrustParticles.isPlaying) leftSideThrustParticles.Play();
+    }
+
+    private void StopSideParticles()
+    {
+        rightSideThrustParticles.Stop();
+        leftSideThrustParticles.Stop();
     }
 
     void ApplyRotation(Vector3 rotation)
@@ -60,5 +86,4 @@ public class Movement : MonoBehaviour
           RigidbodyConstraints.FreezeRotationY |
           RigidbodyConstraints.FreezePositionZ;
     }
-
 }
