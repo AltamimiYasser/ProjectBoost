@@ -182,7 +182,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.46635818, g: 0.754717, b: 0.54286146, a: 1}
   m_Intensity: 40
   m_Range: 17.642874
   m_SpotAngle: 30
@@ -222,7 +222,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -277,7 +277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8345755072875935124, guid: bbb0ed245c6ad450a82b973bd623dc04, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.48
+      value: 23.18
       objectReference: {fileID: 0}
     - target: {fileID: 8345755072875935124, guid: bbb0ed245c6ad450a82b973bd623dc04, type: 3}
       propertyPath: m_LocalPosition.z
@@ -466,7 +466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8345755072875935124, guid: bbb0ed245c6ad450a82b973bd623dc04, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.29
+      value: 28.036901
       objectReference: {fileID: 0}
     - target: {fileID: 8345755072875935124, guid: bbb0ed245c6ad450a82b973bd623dc04, type: 3}
       propertyPath: m_LocalPosition.z
@@ -817,7 +817,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3662622, g: 0.3224012, b: 0.5943396, a: 1}
   m_Intensity: 10
   m_Range: 17.642874
   m_SpotAngle: 30
@@ -857,7 +857,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -932,7 +932,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.86030823, g: 0.8503471, b: 0.9150943, a: 1}
   m_Intensity: 40
   m_Range: 17.642874
   m_SpotAngle: 30
@@ -972,7 +972,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1092,7 +1092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8345755072875935124, guid: bbb0ed245c6ad450a82b973bd623dc04, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.7531
+      value: 23.5
       objectReference: {fileID: 0}
     - target: {fileID: 8345755072875935124, guid: bbb0ed245c6ad450a82b973bd623dc04, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1242,7 +1242,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6792453, g: 0.61769503, b: 0.44535422, a: 1}
   m_Intensity: 40
   m_Range: 17.642874
   m_SpotAngle: 30
@@ -1282,7 +1282,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1357,7 +1357,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.33908868, g: 0.5660378, b: 0.4078611, a: 1}
   m_Intensity: 40
   m_Range: 17.642874
   m_SpotAngle: 30
@@ -1397,7 +1397,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1462,7 +1462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8345755072875935124, guid: bbb0ed245c6ad450a82b973bd623dc04, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.7165
+      value: 17.463402
       objectReference: {fileID: 0}
     - target: {fileID: 8345755072875935124, guid: bbb0ed245c6ad450a82b973bd623dc04, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1686,7 +1686,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.43217576, g: 0.34420612, b: 0.8584906, a: 1}
   m_Intensity: 40
   m_Range: 17.642874
   m_SpotAngle: 30
@@ -1726,7 +1726,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1757,11 +1757,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8345755072875935124, guid: bbb0ed245c6ad450a82b973bd623dc04, type: 3}
   m_PrefabInstance: {fileID: 1350134152}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2050654924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8345755072875935120, guid: bbb0ed245c6ad450a82b973bd623dc04, type: 3}
+  m_PrefabInstance: {fileID: 681185544}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2050654925 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8345755072875935124, guid: bbb0ed245c6ad450a82b973bd623dc04, type: 3}
   m_PrefabInstance: {fileID: 681185544}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2050654929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050654924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8c63fac97a9406196215e21d464fa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 0, y: 10, z: 0}
+  movementFactor: 0
 --- !u!4 &2092053329 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8345755072875935124, guid: bbb0ed245c6ad450a82b973bd623dc04, type: 3}
@@ -1816,6 +1835,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 825494880, guid: 2f581e945a6eb489e86f267b59047a79, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8980393
+      objectReference: {fileID: 0}
+    - target: {fileID: 825494880, guid: 2f581e945a6eb489e86f267b59047a79, type: 3}
+      propertyPath: m_Color.g
+      value: 0.85098046
+      objectReference: {fileID: 0}
+    - target: {fileID: 825494880, guid: 2f581e945a6eb489e86f267b59047a79, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5294118
+      objectReference: {fileID: 0}
     - target: {fileID: 6442202974704905134, guid: 2f581e945a6eb489e86f267b59047a79, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1921,22 +1952,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket
       objectReference: {fileID: 0}
-    - target: {fileID: 8147233202623526196, guid: 3a600568b344c44c681036619ae42853, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 8829383434608912302, guid: 3a600568b344c44c681036619ae42853, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8829383434608912302, guid: 3a600568b344c44c681036619ae42853, type: 3}
-      propertyPath: m_Range
-      value: 6.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 8829383434608912302, guid: 3a600568b344c44c681036619ae42853, type: 3}
-      propertyPath: m_Intensity
-      value: 40
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a600568b344c44c681036619ae42853, type: 3}
 --- !u!1001 &4862737824531389102
@@ -1946,6 +1961,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 767300359, guid: 029c89c205d9f43c3b54f215730b888f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.68235296
+      objectReference: {fileID: 0}
+    - target: {fileID: 767300359, guid: 029c89c205d9f43c3b54f215730b888f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8352942
+      objectReference: {fileID: 0}
+    - target: {fileID: 767300359, guid: 029c89c205d9f43c3b54f215730b888f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.61960787
+      objectReference: {fileID: 0}
     - target: {fileID: 1904771702321757264, guid: 029c89c205d9f43c3b54f215730b888f, type: 3}
       propertyPath: m_Name
       value: LandingPad
