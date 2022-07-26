@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class Oscillator : MonoBehaviour
 {
-    Vector3 startingPos;
-    [SerializeField] Vector3 movementVector;
-    [SerializeField][Range(0, 1)] float movementFactor;
-    [SerializeField] float period = 2f;
+    [SerializeField] Vector3 movementVector; // Point B
+    [SerializeField] float period = 2f; // Duration it takes to reach full cycle
+
+    Vector3 startingPos; // point A
+    float movementFactor;
 
     void Start()
     {

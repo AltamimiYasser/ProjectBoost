@@ -1776,12 +1776,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2050654924}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa8c63fac97a9406196215e21d464fa2, type: 3}
+  m_Script: {fileID: 11500000, guid: ffdad095ba0b3481880a0696836a0e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movementVector: {x: 0, y: 10, z: 0}
-  movementFactor: 0
-  period: 5
+  period: 7
 --- !u!4 &2092053329 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8345755072875935124, guid: bbb0ed245c6ad450a82b973bd623dc04, type: 3}
